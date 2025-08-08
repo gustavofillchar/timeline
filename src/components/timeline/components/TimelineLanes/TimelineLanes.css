@@ -1,0 +1,22 @@
+.timeline-lanes-container {
+    position: relative;
+    padding-top: 5px;
+}
+
+.timeline-lane {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    border-bottom: 1px solid rgba(225, 228, 232, 0.3);
+    position: relative;
+}
+
+.timeline-lane:last-child {
+    border-bottom: none;
+}
+
+.timeline-lane-content {
+    width: 100%;
+    position: relative;
+    height: 100%;
+}

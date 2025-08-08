@@ -1,0 +1,20 @@
+.timeline-grid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.timeline-grid-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    border-left: 1px solid rgba(225, 228, 232, 0.15);
+    height: 100%;
+}
+
+.timeline-grid-line.month-start {
+    border-left: 1px solid rgba(107, 114, 128, 0.25);
+}

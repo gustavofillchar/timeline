@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import timelineItems from "./timelineItems.js";
-import assignLanes from "./assignLanes.js";
+import "./app.css";
 import Header from "./components/header/index.js";
 import Timeline from "./components/timeline";
 

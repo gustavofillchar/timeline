@@ -1,0 +1,46 @@
+.timeline-header {
+    background: white;
+    z-index: 10;
+    border-bottom: 1px solid rgba(225, 228, 232, 0.5);
+    margin-bottom: 10px;
+}
+
+.timeline-months {
+    display: flex;
+    position: relative;
+    border-bottom: 1px solid rgba(225, 228, 232, 0.3);
+}
+
+.timeline-month {
+    flex: 1;
+    min-width: 120px;
+    padding: 8px 12px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: #586069;
+    border-right: 1px solid rgba(225, 228, 232, 0.3);
+}
+
+.timeline-month:last-child {
+    border-right: none;
+}
+
+.timeline-days {
+    display: flex;
+    position: relative;
+    height: 16px;
+    background: transparent;
+    padding-top: 2px;
+}
+
+.timeline-day {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8px;
+    color: #d1d5db;
+    border-right: 1px solid rgba(225, 228, 232, 0.15);
+    box-sizing: border-box;
+    opacity: 0.7;
+}

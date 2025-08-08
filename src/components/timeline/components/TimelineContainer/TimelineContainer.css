@@ -1,0 +1,13 @@
+.timeline-main-container {
+    background: #ffffff;
+    position: relative;
+    overflow-x: auto;
+    overflow-y: hidden;
+    min-height: 100vh;
+    max-width: 100%;
+}
+
+.timeline-scroll-wrapper {
+    position: relative;
+    display: inline-block;
+}
