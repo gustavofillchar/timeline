@@ -3,3 +3,34 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+/* Header */
+.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  height: 56px;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 0 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  background: #ffffff;
+  color: #181D26;
+}
+
+.app-header-left,
+.app-header-right {
+  display: flex;
+  align-items: center;
+}
+
+.app-header-center {
+  justify-self: center;
+  font-weight: 600;
+  color: #181D26;
+}
+
+.app-header .app-header-left svg {
+  color: #181D26;
+}

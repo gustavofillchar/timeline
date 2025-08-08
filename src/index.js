@@ -1,13 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import timelineItems from "./timelineItems.js";
+import assignLanes from "./assignLanes.js";
+import Header from "./components/header";
+import Timeline from "./components/timeline";
 
 function App() {
   return (
-    <div>
-      <h2>Good luck with your assignment! {"\u2728"}</h2>
-      <h3>{timelineItems.length} timeline items to render</h3>
-    </div>
+    <>
+      <Header />
+      <main>
+        <Timeline />
+      </main>
+    </>
   );
 }
 
