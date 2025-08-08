@@ -22,29 +22,12 @@ const TimelineItem = ({ item, startDate, endDate, totalDays }) => {
 
     const position = calculatePosition();
 
-    const getItemColor = (id) => {
-        const colors = [
-            '#4285f4',
-            '#34a853',
-            '#fbbc04',
-            '#ea4335',
-            '#9333ea',
-            '#ec4899',
-            '#06b6d4',
-            '#f97316'
-        ];
-        return colors[id % colors.length];
-    };
-
-    const backgroundColor = getItemColor(item.id);
-
     return (
         <div
             className="timeline-item"
             style={{
                 left: position.left,
-                width: position.width,
-                backgroundColor: backgroundColor
+                width: position.width
             }}
             title={`${item.name}\n${item.start} - ${item.end}`}
         >
