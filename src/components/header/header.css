@@ -28,3 +28,54 @@
 .app-header .app-header-left svg {
     color: #181D26;
 }
+
+.app-header-right {
+    justify-content: flex-end;
+}
+
+.zoom-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #f5f5f5;
+    border-radius: 6px;
+    padding: 4px;
+}
+
+.zoom-btn {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 18px;
+    font-weight: 500;
+    color: #181D26;
+}
+
+.zoom-btn:hover:not(:disabled) {
+    background: #f0f0f0;
+    border-color: #d0d0d0;
+}
+
+.zoom-btn:active:not(:disabled) {
+    transform: scale(0.95);
+}
+
+.zoom-btn:disabled {
+    opacity: 0.4;
+}
+
+.zoom-indicator {
+    font-size: 12px;
+    font-weight: 500;
+    color: #666;
+    min-width: 60px;
+    text-align: center;
+    user-select: none;
+}

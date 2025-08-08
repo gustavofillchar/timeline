@@ -4,9 +4,11 @@ import assignLanes from "../../assignLanes";
 import TimelineContainer from "./components/TimelineContainer";
 import TimelineHeader from "./components/TimelineHeader";
 import TimelineLanes from "./components/TimelineLanes";
+import { useZoom } from "../../contexts/ZoomContext";
 import "./timeline.css";
 
 export default function Timeline() {
+    const { dayWidth } = useZoom();
     const lanes = useMemo(() => {
         return assignLanes(timelineItems);
     }, []);
@@ -20,14 +22,14 @@ export default function Timeline() {
         maxDate.setDate(maxDate.getDate() + 1);
 
         const totalDays = Math.ceil((maxDate - minDate) / (1000 * 60 * 60 * 24));
-        const calculatedWidth = Math.max(1400, totalDays * 50);
+        const calculatedWidth = Math.max(1400, totalDays * dayWidth);
 
         return {
             startDate: minDate.toISOString().split('T')[0],
             endDate: maxDate.toISOString().split('T')[0],
             timelineWidth: calculatedWidth
         };
-    }, []);
+    }, [dayWidth]);
 
     return (
         <TimelineContainer timelineWidth={timelineWidth}>
