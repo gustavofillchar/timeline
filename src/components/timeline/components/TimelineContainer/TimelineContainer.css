@@ -3,7 +3,7 @@
     position: relative;
     overflow-x: auto;
     overflow-y: hidden;
-    min-height: 100vh;
+    min-height: calc(100vh - 56px);
     max-width: 100%;
 }
 

@@ -16,11 +16,11 @@ export default function Timeline() {
         const minDate = new Date(Math.min(...dates));
         const maxDate = new Date(Math.max(...dates));
 
-        minDate.setDate(minDate.getDate() - 5);
-        maxDate.setDate(maxDate.getDate() + 5);
+        minDate.setDate(minDate.getDate() - 1);
+        maxDate.setDate(maxDate.getDate() + 1);
 
         const totalDays = Math.ceil((maxDate - minDate) / (1000 * 60 * 60 * 24));
-        const calculatedWidth = Math.max(1400, totalDays * 20);
+        const calculatedWidth = Math.max(1400, totalDays * 50);
 
         return {
             startDate: minDate.toISOString().split('T')[0],
