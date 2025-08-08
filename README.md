@@ -4,6 +4,7 @@
 2. Run `npm install` to install dependencies
 3. Run `npm start` to initialize and connect to a node server with your default browser
 4. The application will render the sample data from `src/timelineItems.js`
+5. Demo version https://timeline-592s.vercel.app
 
 ## Implementation Overview
 
